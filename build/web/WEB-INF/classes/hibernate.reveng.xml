@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="onlinejobportal"/>
+  <table-filter match-name="auth_table"/>
+  <table-filter match-name="photo"/>
+  <table-filter match-name="employee_username_and_password"/>
+  <table-filter match-name="feedback"/>
+  <table-filter match-name="auth_table3"/>
+  <table-filter match-name="compose_message"/>
+  <table-filter match-name="job_master_detail"/>
+  <table-filter match-name="company_master"/>
+  <table-filter match-name="faqs"/>
+  <table-filter match-name="job_profile"/>
+  <table-filter match-name="job_seeker"/>
+  <table-filter match-name="login"/>
+  <table-filter match-name="job_seeker_payment_master"/>
+  <table-filter match-name="auth_table2"/>
+  <table-filter match-name="consultancy"/>
+  <table-filter match-name="employee_contact"/>
+  <table-filter match-name="job_criteria_master_details"/>
+  <table-filter match-name="admin_articles"/>
+  <table-filter match-name="admind_useridandpassword"/>
+  <table-filter match-name="admin_plan_master"/>
+  <table-filter match-name="resume"/>
+</hibernate-reverse-engineering>

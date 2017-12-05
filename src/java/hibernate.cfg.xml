@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/onlinejobportal?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="com/hp/JobSeeker.hbm.xml"/>
+    <mapping resource="com/hp/JobMasterDetail.hbm.xml"/>
+    <mapping resource="com/hp/JobProfile.hbm.xml"/>
+    <mapping resource="com/hp/AdminArticles.hbm.xml"/>
+    <mapping resource="com/hp/AuthTable.hbm.xml"/>
+    <mapping resource="com/hp/Faqs.hbm.xml"/>
+    <mapping resource="com/hp/Feedback.hbm.xml"/>
+    <mapping resource="com/hp/Photo.hbm.xml"/>
+    <mapping resource="com/hp/Resume.hbm.xml"/>
+    <mapping resource="com/hp/Login.hbm.xml"/>
+    <mapping resource="com/hp/ComposeMessage.hbm.xml"/>
+    <mapping resource="com/hp/AdmindUseridandpassword.hbm.xml"/>
+    <mapping resource="com/hp/EmployeeUsernameAndPassword.hbm.xml"/>
+    <mapping resource="com/hp/EmployeeContact.hbm.xml"/>
+    <mapping resource="com/hp/CompanyMaster.hbm.xml"/>
+    <mapping resource="com/hp/AuthTable3.hbm.xml"/>
+    <mapping resource="com/hp/JobCriteriaMasterDetails.hbm.xml"/>
+    <mapping resource="com/hp/AuthTable2.hbm.xml"/>
+    <mapping resource="com/hp/JobSeekerPaymentMaster.hbm.xml"/>
+    <mapping resource="com/hp/AdminPlanMaster.hbm.xml"/>
+    <mapping resource="com/hp/Consultancy.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

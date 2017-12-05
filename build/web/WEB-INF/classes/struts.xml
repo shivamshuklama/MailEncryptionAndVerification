@@ -1,0 +1,49 @@
+<?xml version = "1.0" Encoding = "UTF-8"?>
+<!DOCTYPE struts PUBLIC
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.ui.theme" value="bootstrap" />
+    <!-- Configuration for the default package. -->
+   <package name="default" extends="struts-default">
+       
+       
+        <result-types>
+    <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>    </result-types>
+
+     
+<action name="sendmail" class="com.hp.SendmailAction"> 
+            <result name="success" type="tiles">successfullysendTile</result>
+            <result name="error" type="redirect">jobView1</result>
+        </action> 
+        
+        <action name="login" class="com.hp.JobseekerloginAction">
+            <result name="success" type="tiles">jobseekerafterloginTile</result>
+            <result name="error" type="tiles">inboxTile</result>
+            <result name="input" type="tiles">inboxTile</result>
+        </action>
+         <action name = "emailer" 
+         class = "com.hp.Emailer"
+         method = "execute">
+         <result name = "success">/success.jsp</result>
+         <result name = "error">/error.jsp</result>
+      </action>
+        <action name="signup" class="com.hp.AddNewEmpAction">
+            <result name="success" type="tiles">success.jsp</result>
+            <result name="error">signup.jsp</result>
+            <result name="input">signup.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        <action name="verify_activation" class="com.hp.verify_activation">
+            <result name="success" type="tiles">inboxTile1</result>
+            <result name="error">Error.jsp</result>
+            <result name="input">activation_Failed.jsp</result>
+        </action>
+   </package>
+</struts>

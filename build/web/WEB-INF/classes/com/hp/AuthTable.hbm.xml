@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28-Aug-2016 13:00:30 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.hp.AuthTable" table="auth_table" catalog="onlinejobportal">
+        <id name="authId" type="java.lang.Integer">
+            <column name="auth_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="login" class="com.hp.Login" fetch="select">
+            <column name="loginid" not-null="true" />
+        </many-to-one>
+        <property name="status" type="string">
+            <column name="status" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
